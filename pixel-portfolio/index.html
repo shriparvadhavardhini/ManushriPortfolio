@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MANUSHRI | Pixel Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">MANUSHRI<span>.</span></a>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+      <i></i><i></i><i></i>
+    </button>
+    <nav class="links" id="links">
+      <a href="#home" class="active">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+      <a href="avatar.html" class="btn-mini">Avatar</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1 class="glitch-in">Creativity<br />without<br /><em>limits.</em></h1>
+        <p class="lead">Hey, I'm MANU. Welcome to my creative space. Explore my projects, discover my ideas, and see how I turn inspiration into visual experiences.</p>
+        <div class="row">
+          <a href="#work" class="btn">View my work</a>
+          <a href="#contact" class="btn ghost">Contact me</a>
+          <a href="avatar.html" class="btn mint">Make avatar</a>
+        </div>
+      </div>
+
+      <div class="screen px tilt" id="screen">
+        <div class="status">
+          <span class="battery"><b></b><b></b></span>
+          <span>&hearts; 9999</span>
+          <span>LV.25</span>
+        </div>
+        <div class="scene">
+          <canvas id="skyline" width="160" height="60"></canvas>
+          <canvas id="heroAvatar" aria-label="Your pixel avatar"></canvas>
+          <div class="mood px-sm">
+            <b>MOOD</b><span class="heart">&hearts;</span><em id="moodText">HAPPY</em>
+          </div>
+        </div>
+        <div class="dialog px-sm"><p id="typed"></p><span class="blink">&hearts;</span></div>
+        <div class="status foot">
+          <span id="date">--/--/--</span><span id="clock">--:--</span><span>&#9733; 1234</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="head">
+        <p class="kicker">Player stats</p>
+        <h2 class="title reveal">Ideas into<br /><em>reality.</em></h2>
+        <p class="about reveal">I'm MANUSHRI, a creative individual who enjoys exploring new ideas and creating meaningful work. This portfolio showcases my projects, interests and creative journey.<br /><br />Always curious. Always improving. Always creating.</p>
+      </div>
+      <div class="skill-grid" id="skillGrid"></div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <p class="kicker">Selected projects / 2026</p>
+      <h2 class="title reveal">My creative <em>work.</em></h2>
+      <p class="sub reveal">A collection of projects, experiments and ideas.</p>
+      <div class="work-grid" id="workGrid"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="contact px reveal">
+        <p class="kicker">Let's connect</p>
+        <h2 class="title">Have an idea?<br />Let's make it <em>real.</em></h2>
+        <p>Have a project or want to connect? Send me a message.</p>
+        <div class="row">
+          <a class="btn" href="mailto:you@example.com">Email me</a>
+          <a class="btn ghost" href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot-bar">
+    <span>&copy; 2026 MANUSHRI. All rights reserved.</span>
+    <span>Designed with creativity.</span>
+  </footer>
+
+  <script src="js/avatar.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
